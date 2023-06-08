@@ -1,12 +1,12 @@
 <template>
-    <div>
+    <header>
         <b-navbar variant="faded" type="dark" class="d-flex align-items-center justify-content-center">
             <b-navbar-brand href="index.html">
             <b-icon icon="truck"></b-icon>
             {{ brandName }}
             </b-navbar-brand>
         </b-navbar>
-</div>
+    </header>
 </template>
 
 <script>

@@ -12,22 +12,33 @@ export default {
     BestHeader,
   },
   data() {
-    const appName = ''
-
     return {
-      appName,
+      appName: '',
+      companies: [],
+      isLoading: true
     }
   },
   created() {
-    // Implemente aqui o GET dos dados da API REST
-    // para que isso ocorra na inicialização da pagina
     this.appName = 'MelhorFrete'
+    this.fetchCompanies()
   },
   methods: {
-    // Implemente aqui os metodos utilizados na pagina
-    methodFoo() {
-      console.log(this.appName)
-    },
+    async fetchCompanies() {
+      try {
+
+        const apiUrl = "http://localhost:3000/transport"
+        const response = await fetch(apiUrl)
+        const data = response.json()
+        this.companies = data
+        this.isLoading = false
+
+      } catch (error) {
+
+        console.log(error)
+        this.isLoading = false
+
+      }
+    }
   },
 }
 </script>
