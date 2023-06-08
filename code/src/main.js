@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import { BootstrapVue, IconsPlugin, BootstrapVueIcons } from 'bootstrap-vue'
+import BestHeader from './components/BestHeader'
 import App from './App.vue'
 
 import 'bootstrap/dist/css/bootstrap.css'
@@ -10,6 +11,8 @@ Vue.use(BootstrapVueIcons)
 Vue.use(IconsPlugin)
 
 Vue.config.productionTip = false
+
+Vue.component('best-header', BestHeader)
 
 
 new Vue({
