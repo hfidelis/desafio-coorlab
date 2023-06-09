@@ -3,16 +3,16 @@
     {
       "id": 1,
       "name": "Expresso Oriente",
-      "cost_transport_light": "R$ 2.10",
-      "cost_transport_heavy": "R$ 1.50",
+      "cost_transport_light": "R$ 10.10",
+      "cost_transport_heavy": "R$ 6.50",
       "city": "São Paulo",
       "lead_time": "12h"
     },
     {
       "id": 2,
       "name": "Expresso Oriente",
-      "cost_transport_light": "R$ 4.20",
-      "cost_transport_heavy": "R$ 3.10",
+      "cost_transport_light": "R$ 8.20",
+      "cost_transport_heavy": "R$ 4.10",
       "city": "Belo Horizonte",
       "lead_time": "18h"
     },
@@ -22,39 +22,39 @@
       "cost_transport_light": "R$ 4.50",
       "cost_transport_heavy": "R$ 2.20",
       "city": "Curitiba",
-      "lead_time": "18h"
+      "lead_time": "24h"
     },
     {
       "id": 4,
       "name": "Expresso Oriente",
-      "cost_transport_light": "R$ 6.30",
-      "cost_transport_heavy": "R$ 3.60",
+      "cost_transport_light": "R$ 8.30",
+      "cost_transport_heavy": "R$ 5.60",
       "city": "Fortaleza",
       "lead_time": "48h"
     },
     {
       "id": 5,
       "name": "Expresso Oriente",
-      "cost_transport_light": "R$ 1.30",
-      "cost_transport_heavy": "R$ 0.95",
+      "cost_transport_light": "R$ 2.50",
+      "cost_transport_heavy": "R$ 1.20",
       "city": "Campinas",
       "lead_time": "12h"
     },
     {
       "id": 6,
       "name": "LevoJa",
-      "cost_transport_light": "R$ 2.09",
-      "cost_transport_heavy": "R$ 1.09",
+      "cost_transport_light": "R$ 20.09",
+      "cost_transport_heavy": "R$ 15.09",
       "city": "São Paulo",
       "lead_time": "8h"
     },
     {
       "id": 7,
       "name": "LevoJa",
-      "cost_transport_light": "R$ 3.20",
-      "cost_transport_heavy": "R$ 1.21",
+      "cost_transport_light": "R$ 15.20",
+      "cost_transport_heavy": "R$ 10.21",
       "city": "Belo Horizonte",
-      "lead_time": "18h"
+      "lead_time": "10h"
     },
     {
       "id": 8,
@@ -75,8 +75,8 @@
     {
       "id": 10,
       "name": "LevoJa",
-      "cost_transport_light": "R$ 10.50",
-      "cost_transport_heavy": "R$ 15.50",
+      "cost_transport_light": "R$ 15.50",
+      "cost_transport_heavy": "R$ 10.50",
       "city": "Manaus",
       "lead_time": "16h"
     },
@@ -91,42 +91,98 @@
     {
       "id": 12,
       "name": "Rapido Jacutinga",
-      "cost_transport_light": "R$ 18.25",
-      "cost_transport_heavy": "R$ 16.75",
+      "cost_transport_light": "R$ 5.25",
+      "cost_transport_heavy": "R$ 7.75",
       "city": "Salvador",
-      "lead_time": "4h"
+      "lead_time": "18h"
     },
     {
       "id": 13,
-      "name": "Rapido Jacutinga",
-      "cost_transport_light": "R$ 14.50",
-      "cost_transport_heavy": "R$ 12.20",
-      "city": "Campinas",
-      "lead_time": "2h"
+      "name": "LevoJa",
+      "cost_transport_light": "R$ 19.50",
+      "cost_transport_heavy": "R$ 15.50",
+      "city": "Manaus",
+      "lead_time": "8h"
     },
     {
       "id": 14,
       "name": "Rapido Jacutinga",
-      "cost_transport_light": "R$ 15.72",
-      "cost_transport_heavy": "R$ 18.14",
-      "city": "São Paulo",
+      "cost_transport_light": "R$ 7.50",
+      "cost_transport_heavy": "R$ 5.20",
+      "city": "Campinas",
       "lead_time": "2h"
     },
     {
       "id": 15,
       "name": "Rapido Jacutinga",
-      "cost_transport_light": "R$ 13.67",
+      "cost_transport_light": "R$ 17.72",
       "cost_transport_heavy": "R$ 12.14",
-      "city": "Rio de Janiero",
-      "lead_time": "3h"
+      "city": "São Paulo",
+      "lead_time": "2h"
     },
     {
       "id": 16,
       "name": "Rapido Jacutinga",
+      "cost_transport_light": "R$ 14.67",
+      "cost_transport_heavy": "R$ 7.14",
+      "city": "Rio de Janeiro",
+      "lead_time": "16h"
+    },
+    {
+      "id": 17,
+      "name": "Rapido Jacutinga",
       "cost_transport_light": "R$ 11.50",
-      "cost_transport_heavy": "R$ 10.20",
+      "cost_transport_heavy": "R$ 7.20",
       "city": "Recife",
-      "lead_time": "5h"
+      "lead_time": "14h"
+    },
+    {
+      "id": 18,
+      "name": "Expresso Oriente",
+      "cost_transport_light": "R$ 14.20",
+      "cost_transport_heavy": "R$ 9.50",
+      "city": "Recife",
+      "lead_time": "2h"
+    },
+    {
+      "id": 19,
+      "name": "LevoJa",
+      "cost_transport_light": "R$ 26.67",
+      "cost_transport_heavy": "R$ 18.14",
+      "city": "Rio de Janeiro",
+      "lead_time": "8h"
+    },
+    {
+      "id": 20,
+      "name": "Expresso Oriente",
+      "cost_transport_light": "R$ 15.50",
+      "cost_transport_heavy": "R$ 10.60",
+      "city": "Salvador",
+      "lead_time": "4h"
+    },
+    {
+      "id": 21,
+      "name": "Expresso Oriente",
+      "cost_transport_light": "R$ 23.50",
+      "cost_transport_heavy": "R$ 14.70",
+      "city": "Recife",
+      "lead_time": "4h"
+    },
+    {
+      "id": 22,
+      "name": "Rapido Jacutinga",
+      "cost_transport_light": "R$ 17.50",
+      "cost_transport_heavy": "R$ 10.90",
+      "city": "Natal",
+      "lead_time": "12h"
+    },
+    {
+      "id": 23,
+      "name": "LevoJa",
+      "cost_transport_light": "R$ 14.50",
+      "cost_transport_heavy": "R$ 7.90",
+      "city": "Fortaleza",
+      "lead_time": "20h"
     }
   ]
 }

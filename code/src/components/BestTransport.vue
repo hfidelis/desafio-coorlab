@@ -145,13 +145,13 @@ export default {
 
   @media (min-width: 1200px) {
   main {
-    margin-inline: 35vh;
+    margin-inline: 25vh;
   }
   }
 
   @media (min-width: 1600px) {
   main {
-    margin-inline: 50vh;
+    margin-inline: 40vh;
   }
   }
 
