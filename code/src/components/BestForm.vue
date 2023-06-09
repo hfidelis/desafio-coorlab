@@ -317,6 +317,10 @@ import CompanyCard from './CompanyCard.vue'
         gap: 8px;
         }
 
+        .empty-data {
+            border-top: 1px solid rgba(134, 127, 127, 0.479);
+        }
+
         .form-title p {
             text-align: center;
         }

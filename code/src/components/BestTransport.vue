@@ -1,6 +1,6 @@
 <template>
 
-  <div>
+  <div id="bestTransport">
 
     <best-header :brandName="appName"></best-header>
 
@@ -22,12 +22,15 @@
     
     </main>
 
+    <best-footer></best-footer>
+
   </div>
 
 </template>
 
 <script>
 import BestHeader from './BestHeader.vue'
+import BestFooter from './BestFooter.vue'
 import LoadIcon from './LoadIcon.vue'
 import BestForm from './BestForm.vue'
 
@@ -36,6 +39,7 @@ export default {
     BestHeader,
     LoadIcon,
     BestForm,
+    BestFooter
   },
   data() {
     return {
@@ -52,8 +56,10 @@ export default {
   },
   methods: {
     /* Função assíncrona que realiza a requisição GET em nossa API fictícia
-     * e atribuindo os dados para a variável companies, após o método ser
-     * concluído, o componente de Loading é removido.*/
+     * atribuindo os dados para a variável companies, após o método ser
+     * concluído, o componente de Loading é removido. Caso não seja possível
+     * realizar a requisição, será retornado erro e demonstrado na tela uma
+     * mensagem amigável para o usuário. */
     async fetchCompanies() {
 
       try {
@@ -79,8 +85,14 @@ export default {
 </script>
 
 <style scoped>
+  #bestTransport {
+    height: 100%;
+    width: 100%;
+  }
+
   main {
-    margin: 100px 0;
+    padding: 100px 0;
+    height: auto;
   }
 
   #loading-wrapper {
