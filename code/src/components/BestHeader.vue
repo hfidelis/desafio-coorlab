@@ -23,14 +23,10 @@
 <style scoped>
 
     .navbar {
-    background-color: #6584c6 !important;
+    background-color: var(--primary-color) !important;
     box-shadow: 0 0 16px 4px rgba(0, 0, 0, 0.220);
     }
-
-    img {
-        height: 30px;
-        width: 30px;
-    }
+    
     .navbar-brand {
     font-weight: 700;
     font-family: 'Nunito Sans', sans-serif;

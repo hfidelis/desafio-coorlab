@@ -16,11 +16,6 @@ export default {
 </script>
 
 <style>
-  html, body {
-    height: 100vh;
-    width: 100vw;
-  }
-
   #app {
     height: 100%;
     width: 100%;

@@ -11,9 +11,6 @@ export default {
 </script>
 
 <style scoped>
-    * {
-        font-family: 'Nunito Sans', sans-serif;
-    }
 
     footer {
         position: fixed;
@@ -23,26 +20,26 @@ export default {
         justify-content: center;
         width: 100%;
         height: 56px;
-        background-color: #6584c6 ;
+        background-color: var(--primary-color);
     }
 
     footer p {
-        color: #fff;
+        color: var(--white);
         font-weight: 600;
         margin: 0;
     }
 
     footer a {
-        color: #0B0B0B;
+        color: var(--black);
         font-weight: 700;
         text-decoration: none;
         transition: all 400ms;
     }
 
     footer a:hover {
-        outline: 1px solid #fff;
+        outline: 1px solid var(--white);
         padding: 4px;
 
-        color: #fff;
+        color: var(--white);
     }
 </style>

@@ -11,7 +11,7 @@
       </div>
 
       <div id="api-error-div" v-if="apiError">
-        <b-icon icon="emoji-frown" font-scale="4" style="color: #7c9be0;"></b-icon>
+        <b-icon icon="emoji-frown" font-scale="4" style="color: var(--light-primary);"></b-icon>
         <h2>Não foi possível se conectar com o servidor.<br>Erro: {{ errorInfo[0] }} {{ errorInfo[1] }} {{ errorInfo[2] }}</h2>
       </div>
 
@@ -67,6 +67,7 @@ export default {
         const apiUrl = "http://localhost:3000/transport"
         const response = await fetch(apiUrl)
         const data = await response.json()
+        
         this.companies = data
         this.isLoading = false
         this.apiError = false

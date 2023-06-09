@@ -46,10 +46,6 @@ export default {
 
 <style scoped>
 
-    * {
-        font-family: 'Nunito Sans', sans-serif;
-    }
-
     p {
         margin: 0;
     }
@@ -66,7 +62,6 @@ export default {
         cursor: pointer;
         
     }
-    
 
     .company-info {
         height: 100%;
@@ -80,7 +75,7 @@ export default {
     .icon-div {
         height: 100%;
         width: 20%;
-        background-color: #7c9be0;
+        background-color: var(--light-primary);
 
         display: flex;
         align-items: center;
@@ -98,7 +93,7 @@ export default {
         justify-content: center;
         flex-direction: column;
 
-        background-color: rgb(234, 230, 230);
+        background-color: var(--gray);
         border-radius: 0 12px 12px 0;
 
         padding: 12px 16px;
@@ -117,7 +112,7 @@ export default {
         justify-content: center;
         flex-direction: column;
 
-        background-color: rgb(210, 209, 209);
+        background-color: var(--gray);
 
         border-radius: 12px;
         padding: 12px;
@@ -136,6 +131,10 @@ export default {
     @media (max-width: 768px) {
         .company-card {
             flex-direction: column;
+        }
+
+        .freight-price {
+            width: 50%;
         }
     }
 

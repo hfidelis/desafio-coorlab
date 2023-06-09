@@ -8,6 +8,7 @@ import App from './App.vue'
 
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+import '../src/assets/css/global.css'
 
 Vue.use(BootstrapVue)
 Vue.use(BootstrapVueIcons)

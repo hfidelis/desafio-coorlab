@@ -2,7 +2,7 @@
     <div class="modal">
         <div class="modal-content">
           <div class="modal-header">
-            <b-icon icon="question-octagon" animation="throb" font-scale="2" style="color: #6584c6;"></b-icon>
+            <b-icon icon="question-octagon" animation="throb" font-scale="2" style="color: var(--light-primary);"></b-icon>
           </div>
           <div class="modal-body">
             <p>{{ message }}</p>
@@ -32,9 +32,7 @@
   </script>
   
   <style scoped>
-  * {
-    font-family: 'Nunito Sans', sans-serif;
-  }
+
   .modal {
     display: flex;
     align-items: center;
@@ -55,7 +53,7 @@
   
   .modal-content {
     width: 400px;
-    background-color: #fff;
+    background-color: var(--white);
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 0 16px 4px rgba(0, 0, 0, 0.220);
@@ -96,7 +94,7 @@
     width: 50%;
     border: none;
 
-    background-color: #7c9be0;
+    background-color: var(--light-primary);
 
     letter-spacing: 1px;
     font-weight: 700;
@@ -108,7 +106,7 @@
   }
 
   .modal-button:hover {
-    background-color: #33466e;
+    background-color: var(--dark-primary);
   }
 
   @media (max-width: 768px) {

@@ -164,33 +164,34 @@ import CompanyCard from './CompanyCard.vue'
                     this.isModalVisible = true;
 
                 } else if (this.selectedCity && this.weight) {
-                /* Array apenas com as empresas com o destino da cidade selecionada. */
-                const filteredCompanies = this.companies.filter(company => company.city === this.selectedCity);
+                     /* Array apenas com as empresas com o destino da cidade selecionada. */
+                    const filteredCompanies = this.companies.filter(company => company.city === this.selectedCity);
 
-                if (filteredCompanies.length > 0) {
-                    /* Calculando a empresa com o frete mais caro
-                     * e a empresa com o frete mais barato */
+                    if (filteredCompanies.length > 0) {
+                        /* Calculando a empresa com o frete mais caro
+                        * e a empresa com o frete mais barato */
 
-                    filteredCompanies.forEach(company => {
-                    /* Convertendo os valores de String para números */
-                    let lightCost = parseFloat(company.cost_transport_light.replace('R$ ', '')) * this.weight;
-                    let heavyCost = parseFloat(company.cost_transport_heavy.replace('R$ ', '')) * this.weight;
-                    let deliveryTime = parseInt(company.lead_time.replace('h', ''));
+                        filteredCompanies.forEach(company => {
+                        /* Convertendo os valores de String para números
+                         * e realizando os cálculos de peso leve e peso "pesado" */
+                        let lightCost = parseFloat(company.cost_transport_light.replace('R$ ', '')) * this.weight;
+                        let heavyCost = parseFloat(company.cost_transport_heavy.replace('R$ ', '')) * this.weight;
+                        let leadTime = parseInt(company.lead_time.replace('h', ''));
 
-                    const cost = this.weight <= 100 ? lightCost : heavyCost;
-                        
-                    /* Comparação de valores, alternando as variáveis
-                     * de valor mínimo e tempo mínimo */
-                    if (cost < this.minCost) {
-                        this.minCost = cost;
-                        this.cheapestCompany = company;
-                    }
-                    if (deliveryTime < this.minTime)
-                        this.minTime = deliveryTime;
-                        this.fastestCompany = company;
-                    });
+                        const cost = this.weight <= 100 ? lightCost : heavyCost;
+                            
+                        /* Comparação de valores, alternando as variáveis
+                        * de valor mínimo e tempo mínimo */
+                        if (cost < this.minCost) {
+                            this.minCost = cost;
+                            this.cheapestCompany = company;
+                        }
+                        if (leadTime < this.minTime)
+                            this.minTime = leadTime;
+                            this.fastestCompany = company;
+                        });
 
-                    this.isData = true;
+                        this.isData = true;
 
                 } else {
                     
@@ -213,15 +214,12 @@ import CompanyCard from './CompanyCard.vue'
 
 <style scoped>
 
-    * {
-        font-family: 'Nunito Sans', sans-serif;
-    }
     .container {
         box-shadow: 0 0 16px 4px rgba(0, 0, 0, 0.220);
     }
 
     .form-wrapper {
-        background-color: rgb(235, 234, 234);
+        background-color: var(--gray);
         box-shadow: none;
 
         margin: 80px 0!important;
@@ -232,7 +230,7 @@ import CompanyCard from './CompanyCard.vue'
         align-items: center;
         gap: 8px;
 
-        background-color: #6584c6 ;
+        background-color: var(--primary-color);
     }
 
     .form-title {
@@ -261,20 +259,20 @@ import CompanyCard from './CompanyCard.vue'
 
         border-radius: 8px;
 
-        background-color: #7c9be0;
+        background-color: var(--light-primary);
         border: none;
 
         transition: all 400ms;
     }
 
     button:hover {
-        background-color: #33466e;
+        background-color: var(--dark-primary);
     }
 
     .container-title {
         margin: 0;
 
-        color: #fff;
+        color: var(--white);
     }
 
     .empty-data {
