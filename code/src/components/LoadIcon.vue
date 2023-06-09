@@ -13,6 +13,7 @@
 <style scoped>
     .load-wrapper {
         background-color: #6584c6;
+        box-shadow: 0 0 24px 2px rgba(0, 0, 0, 0.220);
         border-radius: 50%;
         height: 60px;
         width: 60px;
