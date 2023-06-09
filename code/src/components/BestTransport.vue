@@ -138,9 +138,10 @@ export default {
   }
   }
 
-  @media (min-width: 992px) {
+  @media (max-width: 992px) {
   main {
     margin-inline: 8vh;
+    padding: 50px 0;
   }
   }
 

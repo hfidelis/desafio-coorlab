@@ -133,6 +133,10 @@ export default {
             flex-direction: column;
         }
 
+        .company-info {
+            width: 90%;
+        }
+
         .freight-price {
             width: 50%;
         }
