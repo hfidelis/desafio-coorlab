@@ -24,7 +24,7 @@
 
     .navbar {
     background-color: var(--primary-color) !important;
-    box-shadow: 0 0 16px 4px rgba(0, 0, 0, 0.220);
+    box-shadow: 0 0 16px 4px var(--light-shadow);
     }
     
     .navbar-brand {

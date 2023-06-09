@@ -13,7 +13,7 @@
 <style scoped>
     .load-wrapper {
         background-color: var(--primary-color);
-        box-shadow: 0 0 24px 2px rgba(0, 0, 0, 0.220);
+        box-shadow: 0 0 16px 2px var(--light-shadow);
         border-radius: 50%;
         height: 60px;
         width: 60px;

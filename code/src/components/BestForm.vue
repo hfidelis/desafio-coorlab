@@ -223,12 +223,12 @@ import CompanyCard from './CompanyCard.vue'
 <style scoped>
 
     .container {
-        box-shadow: 0 0 16px 4px rgba(0, 0, 0, 0.220);
+        box-shadow: 0 0 16px 4px var(--light-shadow);
     }
 
     .form-wrapper {
         background-color: var(--gray);
-        box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.220);
+        box-shadow: 0 0 12px 4px var(--light-shadow);
 
         margin: 80px 0!important;
     }
@@ -269,7 +269,7 @@ import CompanyCard from './CompanyCard.vue'
 
         background-color: var(--light-primary);
         border: none;
-        box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.220);
+        box-shadow: 0 0 12px 4px var(--light-shadow);
 
         transition: all 400ms;
     }
@@ -327,7 +327,7 @@ import CompanyCard from './CompanyCard.vue'
 
     .clear-button {
         background-color: var(--light-primary);
-        box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.220);
+        box-shadow: 0 0 12px 2px var(--light-shadow);
 
         font-weight: 700;
         letter-spacing: 1px;

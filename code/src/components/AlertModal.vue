@@ -56,7 +56,7 @@
     background-color: var(--white);
     border-radius: 8px;
     padding: 20px;
-    box-shadow: 0 0 16px 4px rgba(0, 0, 0, 0.220);
+    box-shadow: 0 0 16px 4px var(--light-shadow);
   }
   
   .modal-header {
@@ -96,7 +96,7 @@
 
     background-color: var(--light-primary);
 
-    box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.220);
+    box-shadow: 0 0 12px 4px var(--light-shadow);
 
     letter-spacing: 1px;
     font-weight: 700;
