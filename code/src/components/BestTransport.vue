@@ -141,7 +141,7 @@ export default {
   @media (max-width: 992px) {
   main {
     margin-inline: 8vh;
-    padding: 50px 0;
+    padding: 50px 0 120px 0;
   }
   }
 
