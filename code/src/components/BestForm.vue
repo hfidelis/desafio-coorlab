@@ -65,6 +65,8 @@
                     :freightPrice="fastestCompanyPrice"
                     ></CompanyCard>
 
+                    <button class="clear-button" @click="clearData">Limpar</button>
+
                 </div>
 
                 <div class="empty-data" v-else>
@@ -207,6 +209,12 @@ import CompanyCard from './CompanyCard.vue'
                     this.isModalVisible = true;
                 }
             },
+            /* Método para limpar os dados das transportadoras. */
+            clearData() {
+                this.isData = false;
+                this.selectedCity = '';
+                this.weight = ''
+            }
         }
     }
 
@@ -220,7 +228,7 @@ import CompanyCard from './CompanyCard.vue'
 
     .form-wrapper {
         background-color: var(--gray);
-        box-shadow: none;
+        box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.220);
 
         margin: 80px 0!important;
     }
@@ -261,6 +269,7 @@ import CompanyCard from './CompanyCard.vue'
 
         background-color: var(--light-primary);
         border: none;
+        box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.220);
 
         transition: all 400ms;
     }
@@ -314,6 +323,26 @@ import CompanyCard from './CompanyCard.vue'
     .data-div:has(.company-card:hover) .company-card:not(:hover) {
         filter: grayscale(100%) blur(2px);
         transform: scale(0.95);
+    }
+
+    .clear-button {
+        background-color: var(--light-primary);
+        box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.220);
+
+        font-weight: 700;
+        letter-spacing: 1px;
+
+        border: none;
+
+        padding: 8px 24px;
+
+        border-radius: 8px;
+
+        transition: all 400ms;
+    }
+
+    .clear-button:hover {
+        background-color: var(--dark-primary);
     }
 
     @media (max-width: 768px) {

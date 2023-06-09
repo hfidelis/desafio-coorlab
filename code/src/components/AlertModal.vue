@@ -96,6 +96,8 @@
 
     background-color: var(--light-primary);
 
+    box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.220);
+
     letter-spacing: 1px;
     font-weight: 700;
 
