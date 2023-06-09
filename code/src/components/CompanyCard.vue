@@ -59,17 +59,18 @@ export default {
         justify-content: center;
         gap: 24px;
         height: auto;
-        min-width: 90%;
+        width: 90%;
 
         transition: all 500ms;
 
         cursor: pointer;
         
     }
+    
 
     .company-info {
         height: 100%;
-        min-width: 70%;
+        width: 70%;
 
         display: flex;
         align-items: center;
@@ -78,7 +79,7 @@ export default {
 
     .icon-div {
         height: 100%;
-        min-width: 20%;
+        width: 20%;
         background-color: #7c9be0;
 
         display: flex;
@@ -92,7 +93,7 @@ export default {
 
     .company-data {
         height: 100%;
-        min-width: 80%;
+        width: 80%;
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -110,7 +111,7 @@ export default {
 
     .freight-price {
         height: 100%;
-        min-width: 30%;
+        width: 30%;
 
         display: flex;
         justify-content: center;
@@ -120,6 +121,7 @@ export default {
 
         border-radius: 12px;
         padding: 12px;
+        overflow: hidden;
     }
 
     .freight-price p {
