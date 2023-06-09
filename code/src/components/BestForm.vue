@@ -307,6 +307,7 @@ import CompanyCard from './CompanyCard.vue'
 
     .data-div:has(.company-card:hover) .company-card:not(:hover) {
         filter: grayscale(100%) blur(2px);
+        transform: scale(0.95);
     }
 
     @media (max-width: 768px) {
