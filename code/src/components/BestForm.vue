@@ -43,8 +43,12 @@
             </div>
 
             <div class="col-md-7">
+
                 <div class="data-div" v-if="isData">
-                    <h5 class="data-div-title">Estas são as melhores alternativas de frete que encontramos para você.</h5>
+
+                    <h5 class="data-div-title">Estas são as melhores alternativas de frete que encontramos para você com destino para 
+                        {{ cheapestCompany.city || fastestCompany.city }}.</h5>
+
                     <CompanyCard
                     iconName="currency-dollar"
                     cardLabel="Frete com menor valor"
@@ -52,6 +56,7 @@
                     :freightTime="cheapestCompanyTime"
                     :freightPrice="cheapestCompanyPrice"
                     ></CompanyCard>
+
                     <CompanyCard
                     iconName="speedometer"
                     cardLabel="Frete mais rápido"
@@ -59,12 +64,14 @@
                     :freightTime="fastestCompanyTime"
                     :freightPrice="fastestCompanyPrice"
                     ></CompanyCard>
+
                 </div>
 
                 <div class="empty-data" v-else>
                     <b-icon icon="search" animation="cylon" font-scale="2"></b-icon>
                     <p class="h5">{{columnText}}</p>
                 </div>
+                
             </div>
 
         </div>
@@ -301,6 +308,7 @@ import CompanyCard from './CompanyCard.vue'
     }
 
     .data-div-title {
+        text-align: justify;
         margin-bottom: 16px;
         padding-inline: 8px;
     }
